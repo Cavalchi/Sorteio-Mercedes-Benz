@@ -127,7 +127,7 @@ fetch('https://api.mailgun.net/v3/<SEU_DOMINIO>/messages', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Basic ${btoa('api:<3ac78d20070fcf7c51a7e203b8012137-2cc48b29-08c7f24e
+    'Authorization': `Basic ${btoa('api:<https://api.mailgun.net/v3/sandboxdecba29a530f4681b7dfc2996ded546b.mailgun.org/messages
 >')}`
   },
   body: JSON.stringify({
