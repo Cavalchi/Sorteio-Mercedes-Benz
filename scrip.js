@@ -122,35 +122,21 @@ submit.addEventListener('click', function(e) {
       // Gerar número de sorteio aleatório entre 10 e 99999
       let numeroSorteio = Math.floor(Math.random() * (99999 - 10 + 1)) + 10;
     
-      // Enviar uma solicitação para a API do SendGrid
-      fetch('https://api.sendgrid.com/v3/mail/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${SG.KvEnKuNaRVOmQrEyscqKHg.EyUUmGt3vQTBtIQUkKVkH-vjZVqGpVsQ5aJOnva-Ucc}`        },
-        body: JSON.stringify({
-          personalizations: [
-            {
-              to: [
-                {
-                  email: email
-                }
-              ],
-              subject: 'Sorteio'
-            }
-          ],
-          from: {
-            email: 'jpcavalchikar@hotmail.com'
-          },
-          content: [
-            {
-              type: 'text/plain',
-              value: `Parabéns ${name} ${lastname}, seu cadastro foi um sucesso! O seu número do sorteio é: ${numeroSorteio}`
-            }
-          ]
-        })
-      })
-      .then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.error(error));
+      // Enviar uma solicitação para a API da Mailgun
+fetch('https://api.mailgun.net/v3/<SEU_DOMINIO>/messages', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': `Basic ${btoa('api:<pubkey-0afb8a5c217403af6412336db9689181>')}`
+  },
+  body: JSON.stringify({
+    from: 'noreply@<dads>',
+    to: email,
+    subject: 'Sorteio',
+    text: `Parabéns ${name} ${lastname}, seu cadastro foi um sucesso! O seu número do sorteio é: ${numeroSorteio}`
+  })
+})
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.error(error));
     });
