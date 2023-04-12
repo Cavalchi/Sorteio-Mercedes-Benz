@@ -127,7 +127,7 @@ fetch('https://api.mailgun.net/v3/<SEU_DOMINIO>/messages', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Basic ${btoa('api:<pubkey-0afb8a5c217403af6412336db9689181>')}`
+    'Authorization': `Basic ${btoa('api:<3ac78d20070fcf7c51a7e203b8012137-2cc48b29-08c7f24e>')}`
   },
   body: JSON.stringify({
     from: 'noreply@<dads>',
