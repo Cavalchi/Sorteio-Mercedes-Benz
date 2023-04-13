@@ -2,7 +2,7 @@ const owner = 'Cavalchi';
 const repo = 'Sorteio-Mercedes-Benz';
 const path = 'Sorteio-Mercedes-Benz/Cadastro/att.js';
 const message = 'mensagem de confirmação';
-const token = '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';
+const token = process.env.GITHUB_TOKEN;
 const messageElement = document.createElement('div');
 document.body.appendChild(messageElement);
 
