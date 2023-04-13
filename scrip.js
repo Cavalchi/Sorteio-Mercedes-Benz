@@ -123,7 +123,7 @@ form.addEventListener('submit', function(event) {
   let formData = new FormData(form);
   
   // Envia os dados para o back-end usando uma solicitação HTTP POST
-  fetch('http://joaopedrocarvalho.pythonanywhere.com', {
+  fetch('https://www.pythonanywhere.com/user/joaopedrocarvalho/files/home/joaopedrocarvalho/Sorteio-Mercedes-Benz/Cadastro/app.js?edit', {
       method: 'POST',
       body: formData
   })
