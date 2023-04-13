@@ -125,7 +125,8 @@ class Validator {
       // Exibir o número 10 na tela
       let resultElement = document.createElement('div');
       resultElement.textContent = `O número sorteado é: ${numeroSorteio}`;
-      document.body.appendChild(resultElement);})
+      document.body.appendChild(resultElement);
+    })
 .then(response => response.text())
 .then(result => console.log(result))
 .catch(error => console.error(error));
