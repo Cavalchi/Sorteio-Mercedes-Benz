@@ -55,4 +55,4 @@ return fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
 .catch(error => {
   // Exibir uma mensagem de erro
   messageElement.textContent = 'Ocorreu um erro ao salvar os dados.';
-});
+});})
