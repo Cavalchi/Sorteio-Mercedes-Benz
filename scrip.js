@@ -117,15 +117,7 @@ class Validator {
       let validator = new Validator();
     
       // Chamar o método validate() para realizar a validação
-      validator.validate(form);
-        
-      // Gerar número de sorteio aleatório entre 10 e 99999
-      let numeroSorteio = Math.floor(Math.random() * (99999 - 10 + 1)) + 10;
-        
-      // Exibir o número 10 na tela
-      let resultElement = document.createElement('div');
-      resultElement.textContent = `O número sorteado é: ${numeroSorteio}`;
-      document.body.appendChild(resultElement);
+      validator.validate(form);      
     })
 .then(response => response.text())
 .then(result => console.log(result))
