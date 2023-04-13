@@ -130,4 +130,9 @@ form.addEventListener('submit', function(event) {
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.error(error));
+  document.getElementById("btn-submit").addEventListener("click", function(event){
+    event.preventDefault();
+    // atualize a página aqui
+    location.reload();
+});
 })})
