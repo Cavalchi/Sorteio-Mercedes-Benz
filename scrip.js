@@ -105,38 +105,28 @@ class Validator {
     let form = document.getElementById('register-form');
     let submit = document.getElementById('btn-submit');
 
-submit.addEventListener('click', function(e) {
-  e.preventDefault();
-
-  // Coletar os dados do formulário
-  let email = document.getElementById('email').value;
-  let name = document.getElementById('name').value;
-  let lastname = document.getElementById('lastname').value;
-
-  // Criar uma instância do Validator
-  let validator = new Validator();
-
-  // Chamar o método validate() para realizar a validação
-  validator.validate(form);
+    submit.addEventListener('click', function(e) {
+      e.preventDefault();
     
+      // Coletar os dados do formulário
+      let email = document.getElementById('email').value;
+      let name = document.getElementById('name').value;
+      let lastname = document.getElementById('lastname').value;
+    
+      // Criar uma instância do Validator
+      let validator = new Validator();
+    
+      // Chamar o método validate() para realizar a validação
+      validator.validate(form);
+        
       // Gerar número de sorteio aleatório entre 10 e 99999
       let numeroSorteio = Math.floor(Math.random() * (99999 - 10 + 1)) + 10;
-    
-      // Enviar uma solicitação para a API da Mailgun
-fetch('https://api.mailgun.net/v3/Dads/messages', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Basic ${btoa('api:<>')}`
-  },
-  body: JSON.stringify({
-    from: 'noreply@<dads>',
-    to: email,
-    subject: 'Sorteio',
-    text: `Parabéns ${name} ${lastname}, seu cadastro foi um sucesso! O seu número do sorteio é: ${numeroSorteio}`
-  })
-})
+        
+      // Exibir o número 10 na tela
+      let resultElement = document.createElement('div');
+      resultElement.textContent = `O número sorteado é: ${numeroSorteio}`;
+      document.body.appendChild(resultElement);})
 .then(response => response.text())
 .then(result => console.log(result))
 .catch(error => console.error(error));
-    });
+    ;
