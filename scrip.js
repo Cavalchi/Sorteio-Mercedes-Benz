@@ -122,13 +122,7 @@ submit.addEventListener('click', function(e) {
       // Gerar número de sorteio aleatório entre 10 e 99999
       let numeroSorteio = Math.floor(Math.random() * (99999 - 10 + 1)) + 10;
     
-      // Enviar uma solicitação para a API da Mailgun
-fetch('https://api.mailgun.net/v3/Dads/messages', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Basic ${btoa('api:<>')}`
-  },
+
   body: JSON.stringify({
     from: 'noreply@<dads>',
     to: email,
