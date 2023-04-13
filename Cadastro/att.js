@@ -32,20 +32,21 @@ fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
   // Codificar o conteúdo atualizado em base64
   content = btoa(content);
 
-  // Atualizar o conteúdo do arquivo
-  return fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-    method: 'PUT',
-    headers: {
-      'Authorization': `token ${token}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ message, content })
-  });
+// Atualizar o conteúdo do arquivo
+return fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+  method: 'PUT',
+  headers: {
+    'Authorization': `token ${token}`,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ message, content })
 })
 .then(response => {
   if (response.ok) {
     // Exibir uma mensagem de sucesso
     messageElement.textContent = 'Dados salvos com sucesso!';
+    // Atualizar a página
+    location.reload();
   } else {
     // Exibir uma mensagem de erro
     messageElement.textContent = 'Ocorreu um erro ao salvar os dados.';
