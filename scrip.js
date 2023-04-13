@@ -127,7 +127,7 @@ fetch('https://api.mailgun.net/v3/Dads/messages', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': `Basic ${btoa('api:<2b9835d10b88f1fa5f75f613237753c1-2cc48b29-0a3ccaa6>')}`
+    'Authorization': `Basic ${btoa('api:<>')}`
   },
   body: JSON.stringify({
     from: 'noreply@<dads>',
