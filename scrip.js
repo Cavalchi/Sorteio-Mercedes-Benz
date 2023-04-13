@@ -9,7 +9,8 @@ class Validator {
       'data-equal',
       'data-password-validate',
     ]
-  }  
+  }
+
   validate(form) {
     let currentValidations = document.querySelectorAll('form .error-validation');
     if(currentValidations.length) {
@@ -27,6 +28,7 @@ class Validator {
       }
     }, this);
   }
+
   minlength(input, minValue) {
     let inputLength = input.value.length;
     let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
@@ -34,6 +36,7 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
+
   maxlength(input, maxValue) {
     let inputLength = input.value.length;
     let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
@@ -41,6 +44,7 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
+
   onlyletters(input) {
     let re = /^[A-Za-z]+$/;;
     let inputValue = input.value;
@@ -49,6 +53,7 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
+
   emailvalidate(input) {
     let re = /\S+@\S+\.\S+/;
     let email = input.value;
@@ -57,6 +62,7 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
+
   equal(input, inputName) {
     let inputToCompare = document.getElementsByName(inputName)[0];
     let errorMessage = `Este campo precisa estar igual ao ${inputName}`;
@@ -64,13 +70,15 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
+
   required(input) {
-   let inputValue = input.value;
+  let inputValue = input.value;
     if(inputValue === '') {
       let errorMessage = `Este campo é obrigatório`;
       this.printMessage(input, errorMessage);
     }
   }
+
   passwordvalidate(input) {
     let charArr = input.value.split("");
     let uppercases = 0;
@@ -88,51 +96,55 @@ class Validator {
       this.printMessage(input, errorMessage);
     }
   }
-  printMessage(input, msg) {
-    let errorsQty = input.parentNode.querySelector('.error-validation');
-    if(errorsQty === null) {
-      let template = document.querySelector('.error-validation').cloneNode(true);
-      template.textContent = msg;
-      let inputParent = input.parentNode;
-      template.classList.remove('template');
-      inputParent.appendChild(template);
-    }
-  }
-    cleanValidations(validations) {
-      validations.forEach(el => el.remove());
-    }
-  }
-  let form = document.getElementById('register-form');
-  let submit = document.getElementById('btn-submit');
 
-  submit.addEventListener('click', function(e) {
-    e.preventDefault();
-  
-    // Coletar os dados do formulário
-    let email = document.getElementById('email').value;
-    let name = document.getElementById('name').value;
-    let lastname = document.getElementById('lastname').value;
-  
-    // Criar uma instância do Validator
-    let validator = new Validator();
-  let form = document.getElementById('register-form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  // Obtém os dados do formulário
-  let formData = new FormData(form);
-  
-  // Envia os dados para o back-end usando uma solicitação HTTP POST
-  fetch('http://joaopedrocarvalho.pythonanywhere.com/home/joaopedrocarvalho/Sorteio-Mercedes-Benz/Cadastro/app.py', {
-      method: 'POST',
-      body: formData
-  })
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.error(error));
-  document.getElementById("btn-submit").addEventListener("click", function(event){
+  printMessage(input, msg) {
+      let errorsQty = input.parentNode.querySelector('.error-validation');
+      if(errorsQty === null) {
+        let template = document.querySelector('.error-validation').cloneNode(true);
+        template.textContent = msg;
+        let inputParent = input.parentNode;
+        template.classList.remove('template');
+        inputParent.appendChild(template);
+      }
+    }
+      cleanValidations(validations) {
+        validations.forEach(el => el.remove());
+      }
+    }
+    let form = document.getElementById('register-form');
+    let submit = document.getElementById('btn-submit');
+    submit.addEventListener('click', function(e) {
+      e.preventDefault();    
+      // Coletar os dados do formulário
+      let email = document.getElementById('email').value;
+      let name = document.getElementById('name').value;
+      let lastname = document.getElementById('lastname').value;    
+      // Criar uma instância do Validator
+      let validator = new Validator();
+    let form = document.getElementById('register-form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+        // Obtém os dados do formulário
+    let formData = new FormData(form);    
+    // Envia os dados para o back-end usando uma solicitação HTTP POST
+    fetch('http://joaopedrocarvalho.pythonanywhere.com/submit-form', {
+        method: 'POST',
+        body: formData
+    })
+    let form = document.getElementById('register-form');
+let submit = document.getElementById('btn-submit');
+
+submit.addEventListener('click', function(e) {
+  e.preventDefault();
+  // código para coletar os dados do formulário aqui
+});
+
+document.getElementById("btn-submit").addEventListener("click", function(event){
     event.preventDefault();
     // atualize a página aqui
     location.reload();
-});
-})})
+})
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
+  })})
