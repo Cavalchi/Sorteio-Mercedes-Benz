@@ -1,58 +1,53 @@
-const owner = 'Cavalchi';
-const repo = 'Sorteio-Mercedes-Benz';
-const path = 'Sorteio-Mercedes-Benz/Cadastro/att.js';
-const message = 'mensagem de confirmação';
-const token = process.env.GITHUB_TOKEN;
-const messageElement = document.createElement('div');
-document.body.appendChild(messageElement);
+import base64
+import json
+import os
 
-// Obter o conteúdo atual do arquivo
-fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-  headers: {
-    'Authorization': `token ${token}`
-  }
-})
-.then(response => response.json())
-.then(data => {
-  // Decodificar o conteúdo do arquivo de base64
-  let content = atob(data.content);
+import requests
 
-  // Coletar os valores dos campos do formulário
-  let email = document.getElementById('email').value;
-  let name = document.getElementById('name').value;
-  let lastname = document.getElementById('lastname').value;
-  let phone = document.getElementById('phone').value;
+owner = 'Cavalchi'
+repo = 'Sorteio-Mercedes-Benz'
+path = 'Sorteio-Mercedes-Benz/Cadastro/att.js'
+message = 'mensagem de confirmação'
+token = os.environ['GITHUB_TOKEN']
 
-  // Formatar os dados do formulário
-  let formData = `E-mail: ${email}\nNome: ${name}\nSobrenome: ${lastname}\nTelefone: ${phone}`;
+# Obter o conteúdo atual do arquivo
+response = requests.get(
+    f'https://api.github.com/repos/{owner}/{repo}/contents/{path}',
+    headers={'Authorization': f'token {token}'}
+)
+data = response.json()
 
-  // Adicionar os novos dados do formulário
-  content += `\n${formData}`;
+# Decodificar o conteúdo do arquivo de base64
+content = base64.b64decode(data['content']).decode('utf-8')
 
-  // Codificar o conteúdo atualizado em base64
-  content = btoa(content);
+# Coletar os valores dos campos do formulário
+email = input('Email: ')
+name = input('Nome: ')
+lastname = input('Sobrenome: ')
+phone = input('Telefone: ')
 
-// Atualizar o conteúdo do arquivo
-return fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-  method: 'PUT',
-  headers: {
-    'Authorization': `token ${token}`,
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ message, content })
-})
-.then(response => {
-  if (response.ok) {
-    // Exibir uma mensagem de sucesso
-    messageElement.textContent = 'Dados salvos com sucesso!';
-    // Atualizar a página
-    location.reload();
-  } else {
-    // Exibir uma mensagem de erro
-    messageElement.textContent = 'Ocorreu um erro ao salvar os dados.';
-  }
-})
-.catch(error => {
-  // Exibir uma mensagem de erro
-  messageElement.textContent = 'Ocorreu um erro ao salvar os dados.';
-});})
+# Formatar os dados do formulário
+form_data = f'E-mail: {email}\nNome: {name}\nSobrenome: {lastname}\nTelefone: {phone}'
+
+# Adicionar os novos dados do formulário
+content += f'\n{form_data}'
+
+# Codificar o conteúdo atualizado em base64
+content = base64.b64encode(content.encode('utf-8')).decode('utf-8')
+
+# Atualizar o conteúdo do arquivo
+response = requests.put(
+    f'https://api.github.com/repos/{owner}/{repo}/contents/{path}',
+    headers={
+        'Authorization': f'token {token}',
+        'Content-Type': 'application/json'
+    },
+    data=json.dumps({'message': message, 'content': content})
+)
+
+if response.ok:
+    # Exibir uma mensagem de sucesso
+    print('Dados salvos com sucesso!')
+else:
+    # Exibir uma mensagem de erro
+    print('Ocorreu um erro ao salvar os dados.')
