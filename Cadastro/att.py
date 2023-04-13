@@ -27,7 +27,7 @@ lastname = input('Sobrenome: ')
 phone = input('Telefone: ')
 
 # Formatar os dados do formulário
-form_data = f'E-mail: {email}\nNome: {name}\nSobrenome: {lastname}\nTelefone: {phone}'
+form_data = f'{email} {name} {lastname} {phone}'
 
 # Adicionar os novos dados do formulário
 content += f'\n{form_data}'
