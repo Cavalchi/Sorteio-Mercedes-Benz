@@ -117,7 +117,7 @@ form.addEventListener('submit', function(event) {
   // Coletar os dados do formulário
   let formData = new FormData(form);
   // Enviar os dados para o back4app usando uma solicitação HTTP POST
-  fetch(<parse-dashboard.back4app.com/apps/25a26d6e-330a-47b2-8a6b-d8bb3e153586/browser/MyClass>, {
+  fetch(<'https://parseapi.back4app.com/classes/Person'>, {
     method: 'POST',
   headers: {
     'X-Parse-Application-Id': YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J,
