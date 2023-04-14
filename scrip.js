@@ -120,8 +120,8 @@ form.addEventListener('submit', function(event) {
   fetch(<https://parseapi.back4app.com/classes/Person>, {
     method: 'POST',
     headers: {
-      'X-Parse-Application-Id': YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J,
-      'X-Parse-REST-API-Key': EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW,
+      'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
+      'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(Object.fromEntries(formData))
