@@ -138,6 +138,14 @@ btnSubmit.addEventListener('click', function() {
   }, 500);
   document.getElementById("btn-submit").addEventListener("click", function(event){
   event.target.disabled = true;
+    Parse.Cloud.run('Person', {}).then(response => {
+  const randomNumber = response.number;
+  
+  // Exiba o número gerado na tela para o cliente
+  console.log('Número gerado:', randomNumber);
+}).catch(error => {
+  console.error('Erro ao chamar a função de nuvem:', error);
+});
 });
 });
 });
