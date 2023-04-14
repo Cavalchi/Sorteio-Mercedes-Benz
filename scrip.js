@@ -136,5 +136,8 @@ btnSubmit.addEventListener('click', function() {
   setTimeout(function() {
     btnSubmit.classList.remove('scale');
   }, 500);
+  document.getElementById("btn-submit").addEventListener("click", function(event){
+  event.target.disabled = true;
+});
 });
 });
