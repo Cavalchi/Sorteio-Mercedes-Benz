@@ -111,40 +111,22 @@ class Validator {
         validations.forEach(el => el.remove());
       }
     }
-    let form = document.getElementById('register-form');
-    let submit = document.getElementById('btn-submit');
-    submit.addEventListener('click', function(e) {
-      e.preventDefault();    
-      // Coletar os dados do formulário
-      let email = document.getElementById('email').value;
-      let name = document.getElementById('name').value;
-      let lastname = document.getElementById('lastname').value;    
-      // Criar uma instância do Validator
-      let validator = new Validator();
-    let form = document.getElementById('register-form');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-        // Obtém os dados do formulário
-    let formData = new FormData(form);    
-    // Envia os dados para o back-end usando uma solicitação HTTP POST
-    fetch('http://joaopedrocarvalho.pythonanywhere.com/submit-form', {
-        method: 'POST',
-        body: formData
-    })
-    let form = document.getElementById('register-form');
-let submit = document.getElementById('btn-submit');
-
-submit.addEventListener('click', function(e) {
-  e.preventDefault();
-  // código para coletar os dados do formulário aqui
+    let form = document.getElementById('register-form');    
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Coletar os dados do formulário
+  let formData = new FormData(form);
+  // Enviar os dados para o back4app usando uma solicitação HTTP POST
+  fetch('<URL>', {
+    method: 'POST',
+    headers: {
+      'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
+      'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(Object.fromEntries(formData))
+  })
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.error(error));
 });
-
-document.getElementById("btn-submit").addEventListener("click", function(event){
-    event.preventDefault();
-    // atualize a página aqui
-    location.reload();
-})
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.error(error));
-  })})
