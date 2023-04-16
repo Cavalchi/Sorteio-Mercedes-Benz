@@ -114,6 +114,11 @@ class Validator {
     let form = document.getElementById('register-form');    
 form.addEventListener('submit', function(event) {
   event.preventDefault();
+  setTimeout(()=> {
+    document.getElementById('btn-submit').setAttribute('disabled', true)
+  }, 0001)
+      
+
   // Coletar os dados do formulário
   let formData = new FormData(form);
   let formDetail = Object.fromEntries(formData)
@@ -129,60 +134,60 @@ form.addEventListener('submit', function(event) {
   })  
   .then(response => response.text())
   .then(result => {
-    var resultado = JSON.parse(result)
-    var resultadoArr = resultado.results
-    var existe;
-    resultadoArr.forEach((res) => {
-      if (res.email == email){
-        existe = true
-      }else{
-        existe = false
-      }
-    })
-    if(existe == false || resultadoArr.length == 0){
-      fetch('https://parseapi.back4app.com/classes/Person', {
-        method: 'POST',
+    setTimeout(()=>{
+      var resultado = JSON.parse(result)
+      var resultadoArr = resultado.results
+      var existe;
+      resultadoArr.forEach((res) => {
+        if (res.email == email){
+          existe = true
+        }else{
+          existe = false
+        }
+      })
+      if(existe == false || resultadoArr.length == 0){
+        fetch('https://parseapi.back4app.com/classes/Person', {
+          method: 'POST',
+        headers: {
+          'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
+          'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+      })  
+      .then(resposta => resposta.text())
+      .then(fetch('https://parseapi.back4app.com/classes/Person', {
+        method: 'GET',
       headers: {
         'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
         'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
         'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(Object.fromEntries(formData))
+      }
     })  
     .then(resposta => resposta.text())
-    .then(fetch('https://parseapi.back4app.com/classes/Person', {
-      method: 'GET',
-    headers: {
-      'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
-      'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
-      'Content-Type': 'application/json'
-    }
-  })  
-  .then(resposta => resposta.text())
-  .then(result => { 
-    var number
-    var resultado = JSON.parse(result)
-    var resultadoArr = resultado.results
-    resultadoArr.forEach((res) => {
-      if (res.email == email){
-        number = res.number
-      }else{
-        existe = false
-      }
+    .then(result => {
+      setTimeout(()=> {
+        var number
+        var resultado = JSON.parse(result)
+        var resultadoArr = resultado.results
+        resultadoArr.forEach((res) => {
+          if (res.email == email){
+            number = res.number
+          }else{
+            existe = false
+          }
+        })
+        var texto = document.createTextNode(JSON.stringify(number))
+        document.getElementById('numero-sorteado').classList.remove('sorteado');
+      document.getElementById('numero-sorteado').appendChild(texto)
+      }, 1000) 
     })
-    var texto = document.createTextNode(JSON.stringify(number))
-    document.getElementById('numero-sorteado').classList.remove('sorteado');
-  document.getElementById('numero-sorteado').appendChild(texto)
-  })
-  .catch(error => console.error(error)))
-  .catch(error => console.error(error))
-  }
+    .catch(error => console.error(error)))
+    .catch(error => console.error(error))
+    }
+    }, 0200)
 })
 
-
-
-
- 
   // Adicione este código JavaScript ao seu arquivo JavaScript
 let btnSubmit = document.getElementById('btn-submit');
 btnSubmit.addEventListener('click', function() {
