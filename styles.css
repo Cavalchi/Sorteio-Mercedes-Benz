@@ -133,3 +133,6 @@ input[type="submit"] {
   font-size: 28px;
   font-weight: bold;
 }
+.sorteado {
+  display: none;
+}
