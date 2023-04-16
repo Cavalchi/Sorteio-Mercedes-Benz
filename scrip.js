@@ -140,6 +140,7 @@ form.addEventListener('submit', function(event) {
 .then(response => response.text())
 .then(result => console.log(result))
 .catch(error => console.error(error));
+  console.log(formData)
   // Adicione este código JavaScript ao seu arquivo JavaScript
 let btnSubmit = document.getElementById('btn-submit');
 btnSubmit.addEventListener('click', function() {
