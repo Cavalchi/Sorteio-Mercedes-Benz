@@ -152,4 +152,6 @@ input[type="submit"] {
   font-size: 30px; /* aumentar o tamanho da fonte */
    font-weight: bold; /* tornar o texto em negrito */
   text-align: center; /* centralizar o texto */
+    width: 100%; /* definir a largura do elemento para ocupar toda a largura da tela */
+
 }
