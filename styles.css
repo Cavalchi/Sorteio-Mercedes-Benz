@@ -22,10 +22,12 @@ body {
   padding-top: 5vh;
   background-image: url('teste_page_9x16.jpg');
   background-size: cover;
-  background-position-y: -top;
+  background-position: top;
   background-repeat: no-repeat;
-  
+  height: 100vh; /* Definir altura total da página para ocupar toda a tela */
+  margin: 0; /* Remover margens para ocupar toda a largura da página */
 }
+
 /* form */
 #main-container {
   width: 395px;
