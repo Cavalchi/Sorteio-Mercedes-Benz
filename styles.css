@@ -150,4 +150,6 @@ input[type="submit"] {
 }
 #numero-sorteado {
   font-size: 30px; /* aumentar o tamanho da fonte */
+   font-weight: bold; /* tornar o texto em negrito */
+  text-align: center; /* centralizar o texto */
 }
