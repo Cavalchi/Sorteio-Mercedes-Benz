@@ -180,6 +180,8 @@ form.addEventListener('submit', function(event) {
         var texto = document.createTextNode(JSON.stringify(number))
         document.getElementById('numero-sorteado').classList.remove('sorteado');
       document.getElementById('numero-sorteado').appendChild(texto)
+              texto.style.fontSize = '30px';
+
       }, 1000) 
     })
     .catch(error => console.error(error)))
