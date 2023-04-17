@@ -138,6 +138,8 @@ input[type="submit"] {
   width: 100px;
   font-size: 78px;
   font-weight: bold;
+    font-size: 30px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+
 }
 .sorteado {
   display: none;
