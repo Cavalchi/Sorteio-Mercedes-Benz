@@ -115,6 +115,8 @@ input[type="submit"] {
 }
 #span-numero-sorteio {
   color: white;
+    font-size: 40px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+
 }
 /* Adicione o seguinte código CSS */
 #numero-sorteio {
