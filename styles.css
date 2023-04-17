@@ -22,8 +22,9 @@ body {
   padding-top: 5vh;
   background-image: url('teste_page_9x16.jpg');
   background-size: cover;
-  background-position-y: -top;
-  background-size:auto 100%;
+  /*background-position-y: -top;*/
+  background-repeat: no-repeat;
+  background-size:100%;
 }
 /* form */
 #main-container {
