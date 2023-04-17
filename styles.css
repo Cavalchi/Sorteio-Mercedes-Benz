@@ -145,6 +145,9 @@ input[type="submit"] {
 }
 .sorteado {
   display: none;
-    font-size: 30px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+   
 
+}
+#numero-sorteado {
+  font-size: 30px; /* aumentar o tamanho da fonte */
 }
