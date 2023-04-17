@@ -127,6 +127,8 @@ input[type="submit"] {
   margin-top: 25px;
   margin-right: 20px; /* Adicione essa propriedade para ajustar a margem direita */
   z-index: 9999; /* Adicione essa propriedade para garantir que fique acima dos outros elementos */
+    font-size: 30px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+
 }
 
 #input-numero-sorteio {
