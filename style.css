@@ -203,81 +203,77 @@ input[type="submit"] {
   }
 }
 
-/* Estilos para telas com largura maior que 600px (como desktops) */
+#agreement {
+  margin-right: 0.5vw;
+}
+#agreement,
+#agreement-label {
+  display: inline-block;
+  width: auto;
+}
+.error-validation {
+  color: #ff1a1a;
+  position: relativeolute;
+  top: 57px;
+  font-size: 12px;
+}
+.template {
+  display: none;
+}
 
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scale {
+  animation: scale 0.5s;
+}
+#span-numero-sorteio {
+  color: white;
+  font-size: 40px;
+}
 
-  #agreement {
-    margin-right: 0.5vw;
-  }
-  #agreement,
-  #agreement-label {
-    display: inline-block;
-    width: auto;
-  }
-  .error-validation {
-    color: #ff1a1a;
-    position: relativeolute;
-    top: 57px;
-    font-size: 12px;
-  }
-  .template {
-    display: none;
-  }
+#numero-sorteio {
+  position: relative;
+  top: 0;
+  right: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 20px;
+  z-index: 9999;
+  font-size: 30px;
+}
 
-  @keyframes scale {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .scale {
-    animation: scale 0.5s;
-  }
-  #span-numero-sorteio {
-    color: white;
-    font-size: 40px;
-  }
-
-  #numero-sorteio {
-    position: relative;
-    top: 0;
-    right: 20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    margin-right: 20px;
-    z-index: 9999;
-    font-size: 30px;
-  }
-
-  #input-numero-sorteio {
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    width: 100px;
-    font-size: 78px;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  .sorteado {
-    display: none;
-    font-size: 0.5px;
-  }
-  #numero-sorteado {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-  }
-  footer {
-    min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
-    margin-top: -12.5%;
-    margin-left: 1.5%;
-  }
-
+#input-numero-sorteio {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  font-size: 78px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.sorteado {
+  display: none;
+  font-size: 0.5px;
+}
+#numero-sorteado {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+footer {
+  min-width: 98vw; 
+  margin-top: -9.5%;
+  margin-left: 1.5%;
+}
