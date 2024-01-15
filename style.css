@@ -149,8 +149,8 @@ p.empresa {
 @media (max-width: 1200px) {
   p.empresa {
     font-size: 40%; /* O tamanho da fonte será 80% do tamanho da fonte do elemento pai */
-    padding-left: 51%;
-    margin-top: -20%;
+    padding-left: 50%;
+    margin-top: 46%;
   }
 }
 
@@ -182,7 +182,7 @@ p.marca {
   p.marca {
     font-size: 40%; /* O tamanho da fonte será 40% do tamanho da fonte do elemento pai */
     padding-left: 53%;
-    margin-top: 17.8%;
+    margin-top: 48.8%;
   }
 }
 
@@ -206,11 +206,11 @@ input[type="submit"] {
 /* Estilos para telas com largura maior que 600px (como desktops) */
 @media (min-width: 50vw) {
   .empresa {
-    margin-top: 16vw;
+    margin-top: 17vw;  
   }
 
   .mbestreladois {
-    margin-top: 17vw;
+    margin-top: 17%;
   }
 
   .marca {
