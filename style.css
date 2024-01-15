@@ -149,7 +149,7 @@ p.empresa {
 @media (max-width: 1200px) {
   p.empresa {
     font-size: 40%; /* O tamanho da fonte será 80% do tamanho da fonte do elemento pai */
-    padding-left: 50%;
+    padding-left: 49%;
     margin-top: 46%;
   }
 }
@@ -165,7 +165,7 @@ p.empresa {
 @media (max-width: 1200px) {
   .mbestreladois {
     margin-top: 48%;
-    margin-left: 50%;
+    margin-left: 49%;
     width: 2.7%;
   }
 }
@@ -181,7 +181,7 @@ p.marca {
 @media (max-width: 1200px) {
   p.marca {
     font-size: 40%; /* O tamanho da fonte será 40% do tamanho da fonte do elemento pai */
-    padding-left: 53%;
+    padding-left: 52%;
     margin-top: 48.8%;
   }
 }
