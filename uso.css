@@ -12,7 +12,7 @@
 body {
   padding-top: 1vw;
   background-color: #000;
-  max-width: 98vw;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -20,35 +20,96 @@ a.Voltar:hover {
   color: #00c5ff;
   position: relative;
 }
-
 h2 {
   font-family: "corporate_aregular";
-  font-size: 1.3vw; /* Alterado para tamanho relativo */
-  margin: -1.6%;
+  font-size: 1.3rem; /* Tamanho relativo */
+  margin: -1.6rem;
   color: #fff;
-  padding-left: 30vw;
+  padding-left: 32rem;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.1rem; /* Tamanho de fonte menor para telas pequenas */
+    margin: -1.2rem; /* Ajustar a margem para evitar sobreposição */
+    padding-left: 10.5rem; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  h2 {
+    font-size: 1.2rem; /* Tamanho de fonte intermediário para telas médias */
+    margin: -1.4rem; /* Ajustar a margem */
+    padding-left: 22rem; /* Ajustar o preenchimento esquerdo */
+  }
 }
 
 .mbestrela {
-  width: 4%;
-  max-width: 20%;
-  min-width: 0.1%;
-  margin-left: 20vw;
-  margin-top: 1%;
+  width: 5rem;
+  max-width: 20rem;
+  min-width: 0.1rem;
+  margin-left: 21em;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .mbestrela {
+    width: 3rem; /* Tamanho menor para telas pequenas */
+    margin-left: 4rem; /* Ajustar a margem esquerda para evitar o desbordamento de texto */
+    margin-top: 0.5rem; /* Ajustar a margem superior para evitar sobreposição */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .mbestrela {
+    width: 4rem; /* Tamanho intermediário para telas médias */
+    margin-left: 11rem; /* Ajustar a margem esquerda */
+    margin-top: 0.8rem; /* Ajustar a margem superior */
+  }
 }
 
 a.Voltar {
   font-family: "corporatesdemi";
-  font-size: 1.1vw; /* Alterado para tamanho relativo */
+  font-size: 1.1em; /* Tamanho relativo */
   font-weight: bold;
   text-decoration: underline;
   padding-left: 20.2%;
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  a.Voltar {
+    font-size: 1em; /* Tamanho de fonte menor para telas pequenas */
+    padding-left: 3.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  a.Voltar {
+    font-size: 1.05em; /* Tamanho de fonte intermediário para telas médias */
+    padding-left: 10.5em; /* Ajustar o preenchimento esquerdo */
+  }
+}
+
+
 li {
   list-style-type: none;
-  margin-top: 7%;
+  margin-top: 3em;
+}
+@media (max-width: 600px) {
+  .li {
+   
+    margin-top: 10em; /* Aumentar a margem superior para evitar sobreposição */
+    
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.li {
+    
+    margin-top: 10em; /* Ajustar a margem superior */
+    
+  }
 }
 
 .divisao {
@@ -59,131 +120,179 @@ li {
 
 p.titulodireitos {
   color: #fff;
-  font-size: 2.5vw; /* Alterado para tamanho relativo */
+  font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
-  position: absolute;
   margin-top: 2%;
-  padding-left: 40%;
+  padding-left: 16em;
   white-space: nowrap;
 }
 
-@media (max-width: 1200px) {
-  .titulodireitos {
-    margin-top: 20%;
-    margin-left: -10%;
-    width: 100%;
+@media (max-width: 600px) {
+  p.titulodireitos {
+    font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
+    margin-top: 3%; /* Aumentar a margem superior para evitar sobreposição */
+    padding-left: 3.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.titulodireitos {
+    font-size: 2.2em; /* Tamanho de fonte intermediário para telas médias */
+    margin-top: 0%; /* Ajustar a margem superior */
+    padding-left: 10em; /* Ajustar o preenchimento esquerdo */
+  }
+}
 p.textodireitos {
   color: #fff;
-  font-size: 1.2vw; /* Alterado para tamanho relativo */
+  font-size: 1.3em; /* Tamanho relativo */
   font-family: "corporate_aregular";
-  position: absolute;
-  margin-top: 8%;
+  margin-top: 2%; /* Adicionado */
   text-align: left;
   padding-left: 10%;
 }
 
-@media (max-width: 1200px) {
-  .textodireitos {
-    padding-top: 4%;
-    margin-right: 2%;
-    width: 100%;
+@media (max-width: 600px) {
+  p.textodireitos {
+    font-size: 1em; /* Tamanho de fonte maior para telas pequenas */
+    margin: 10%; /* Aumentar a margem para evitar sobreposição */
+    padding-left: 5%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.textodireitos {
+    font-size: 1.3em; /* Tamanho de fonte intermediário para telas médias */
+    margin: 9%; /* Ajustar a margem */
+    padding-left: 8%; /* Ajustar o preenchimento esquerdo */
   }
 }
 
 p.marcas {
   color: #fff;
-  font-size: 2.5vw; /* Alterado para tamanho relativo */
+  font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
-  position: absolute;
-  margin-top: 20%;
-  padding-left: 39%;
+  margin-top: 2%;
+  padding-left: 16em ;
   white-space: nowrap;
-  text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .marcas {
-    padding-top: 2%;
-    margin-left: -15%;
-    width: 100%;
-    text-align: center;
+@media (max-width: 600px) {
+  p.marcas {
+    font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
+    margin-top: 10%; /* Aumentar a margem superior para evitar sobreposição */
+    padding-left: 2.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.marcas {
+    font-size: 2.2em; /* Tamanho de fonte intermediário para telas médias */
+    margin-top: 10%; /* Ajustar a margem superior */
+    padding-left: 10em; /* Ajustar o preenchimento esquerdo */
   }
 }
 
 p.textomarcas {
   color: #fff;
-  font-size: 1.2vw; /* Alterado para tamanho relativo */
+  font-size: 1.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
-  position: absolute;
-  margin-top: 24%;
+  margin-top: 2em;
   text-align: left;
-  padding-left: 10%;
+  padding-left: 9%;
+  width: 100%;
 }
 
-@media (max-width: 1200px) {
-  .textomarcas {
-    padding-top: 5%;
-    margin-left: 0.5%;
+@media (max-width: 600px) {
+  p.textomarcas {
+    font-size: 1.2em; /* Tamanho de fonte menor para telas pequenas */
+    margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
+    padding-left: 15%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.textomarcas {
+    font-size: 1.41em; /* Tamanho de fonte intermediário para telas médias */
+    margin-top: 1em; /* Ajustar a margem superior */
+    padding-left: 17%; /* Ajustar o preenchimento esquerdo */
     width: 100%;
   }
 }
 
 p.empresa {
   font-family: "corporate_sregular";
-  position: absolute;
-  font-size: 0.7er; /* Alterado para tamanho relativo */
+  font-size: 0.7em; /* Tamanho relativo */
   padding-left: 79.7%;
-  margin-top: 16%;
+  margin-top: -11em;
   white-space: nowrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   p.empresa {
-    font-size: 0.8vw;
-    padding-left: 49%;
-    margin-top: 168%;
+    font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
+    padding-left: 12em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    margin-top: 11em  ; /* Aumentar a margem superior para evitar sobreposição */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.empresa {
+    font-size: 0.65em; /* Tamanho de fonte intermediário para telas médias */
+    padding-left: 60%; /* Ajustar o preenchimento esquerdo */
+    margin-top: 17%; /* Ajustar a margem superior */
   }
 }
 
 .mbestreladois {
-  position: absolute;
   max-width: 20%;
   width: 1.1%;
   min-width: 0.2%;
-  margin-top: 17%;
+  margin-top: 0em;
   margin-left: 79.6%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .mbestreladois {
-    margin-top: 170%;
-    margin-left: 49%;
-    width: 2.7%;
+    width: 1.5em; /* Tamanho menor para telas pequenas */
+    margin-left: 7.3em; /* Reduzir a margem esquerda para evitar o desbordamento de texto */
+    margin-top:0.2em; /* Aumentar a margem superior para evitar sobreposição */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .mbestreladois {
+    width: 1%; /* Tamanho intermediário para telas médias */
+    margin-left: 60%; /* Ajustar a margem esquerda */
+    margin-top: 17.5%; /* Ajustar a margem superior */
   }
 }
 
 p.marca {
   font-family: "corporate_sregular";
-  position: absolute;
-  font-size: 0.7vw; /* Alterado para tamanho relativo */
+  font-size: 0.7em; /* Tamanho relativo */
   padding-left: 80.8%;
-  margin-top: 17.3%;
+  margin-top: -1.5em;
   white-space: nowrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   p.marca {
-    font-size: -2vw;
-    padding-left: 52%;
-    margin-top: 170.8%;
+    font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
+    padding-left: 15em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    margin-top:  -1.9em; /* Aumentar a margem superior para evitar sobreposição */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  p.marca {
+    font-size: 0.4em; /* Tamanho de fonte intermediário para telas médias */
+    padding-left: 11.3em; /* Ajustar o preenchimento esquerdo */
+    margin-top: -4em; /* Ajustar a margem superior */
   }
 }
 
 footer {
-  min-width: 98vw;
+  min-width: 100%;
   margin-top: 20%;
   margin-left: -5%;
 }
