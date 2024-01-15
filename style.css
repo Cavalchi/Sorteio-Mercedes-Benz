@@ -4,18 +4,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
-  color: #FFF;
+  color: #fff;
   border: none;
 }
 
-input, label {
+input,
+label {
   display: block;
   outline: none;
   width: 100%;
 }
 
 a {
-  color: #009BDB;
+  color: #009bdb;
 }
 header {
   background-color: #000;
@@ -55,29 +56,25 @@ form {
   justify-content: space-between;
 }
 h2 {
-  font-family: 'corporate_aregular';
-  padding-left: 34%;
-  font-size: 125%;
-  top: 9.7%; /* Ajustado */
-  padding-top: 0%;
-  position: absolute;
+  font-family: "corporate_aregular";
+  padding-left: 35%;
+  font-size: 138%;
+  margin-top: -1.8%;
+  position: relative; /* Ajustado para 'relative' */
 }
 
 @media (max-width: 600px) {
   h2 {
     font-size: 40%; /* Tamanho mínimo da fonte */
-    top: 1%; /* Adicionado */
-    height: 50%; /* Adicionado */
+    top: 10%; /* Adicionado */
   }
 }
 @media (max-width: 1200px) {
   h2 {
     font-size: 100%; /* Tamanho mínimo da fonte */
-    top: 3.2%; /* Adicionado */
-    height: 60%; /* Adicionado */
+    margin-top: -5.8%;
   }
 }
-
 
 .full-box {
   flex: 1 1 100%;
@@ -94,15 +91,15 @@ h2 {
 }
 label {
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 input {
   border-bottom: 2px solid #323232;
   padding: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 40px;
   color: #000; /* Definir a cor do texto */
-  background-color: #FFF; /* Definir a cor de fundo */
+  background-color: #fff; /* Definir a cor de fundo */
 }
 /* Adicione o seguinte código CSS */
 #numero-sorteio {
@@ -122,24 +119,22 @@ input {
   font-weight: bold;
 }
 
-.mbestrela{
+.mbestrela {
   width: 5.5%;
   max-width: 20%;
   min-width: 4%;
   margin-left: 20vw;
-
 }
 
 @media (max-width: 1200px) {
   .mbestrela {
     margin-left: 10%; /* Tamanho mínimo da fonte */
     width: 11%;
-
   }
 }
-h3{
-  padding-left: 1400px;;
-  font-size: 1.0rem;
+h3 {
+  padding-left: 1400px;
+  font-size: 1rem;
   margin: 0px;
 }
 p.empresa {
@@ -155,12 +150,11 @@ p.empresa {
   p.empresa {
     font-size: 40%; /* O tamanho da fonte será 80% do tamanho da fonte do elemento pai */
     padding-left: 51%;
-    margin-top: 14.8%;
+    margin-top: -20%;
   }
 }
 
-    
-  .mbestreladois{
+.mbestreladois {
   position: absolute;
   max-width: 20%;
   width: 1.1%;
@@ -193,7 +187,7 @@ p.marca {
 }
 
 input[type="submit"] {
-  background-color: #009BDB;
+  background-color: #009bdb;
   color: #000;
   border: none;
   border-radius: 20px;
@@ -201,7 +195,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 @media (max-width: 600px) {
-  .empresa, .mbestreladois, .marca {
+  .empresa,
+  .mbestreladois,
+  .marca {
     font-size: 0.8rem; /* Aumentar o tamanho da fonte para melhor legibilidade */
     /* Adicione quaisquer outros estilos necessários aqui */
   }
@@ -215,7 +211,6 @@ input[type="submit"] {
 
   .mbestreladois {
     margin-top: 17vw;
-
   }
 
   .marca {
@@ -225,13 +220,14 @@ input[type="submit"] {
   #agreement {
     margin-right: 0.5vw;
   }
-  #agreement, #agreement-label {
+  #agreement,
+  #agreement-label {
     display: inline-block;
     width: auto;
   }
   .error-validation {
     color: #ff1a1a;
-    position: absolute;
+    position: relativeolute;
     top: 57px;
     font-size: 12px;
   }
@@ -259,7 +255,7 @@ input[type="submit"] {
   }
 
   #numero-sorteio {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 20;
     display: flex;
@@ -269,7 +265,6 @@ input[type="submit"] {
     margin-right: 20px;
     z-index: 9999;
     font-size: 30px;
-
   }
 
   #input-numero-sorteio {
@@ -280,22 +275,19 @@ input[type="submit"] {
     font-size: 78px;
     font-weight: bold;
     font-size: 30px;
-
   }
   .sorteado {
     display: none;
     font-size: 0.5px;
-
   }
   #numero-sorteado {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     width: 100%;
-
   }
-  footer{
+  footer {
     min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
-    margin-top: -4%;
+    margin-top: -9%;
   }
 }
