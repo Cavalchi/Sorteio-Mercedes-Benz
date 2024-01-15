@@ -305,5 +305,6 @@ input[type="submit"] {
   }
   footer{
     min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
+    margin-top: -7%;
   }
 }
