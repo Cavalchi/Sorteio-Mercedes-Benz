@@ -1,4 +1,4 @@
-/* geral */
+@import url("./fonts.css");
 * {
   margin: 0;
   padding: 0;
@@ -17,20 +17,26 @@ input, label {
 a {
   color: #009BDB;
 }
+header {
+  background-color: #000;
+  color: #000;
+  padding: 15px;
+  text-align: center;
+  min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
+}
 
 body {
-  padding-top: 5vh;
-  background-image: url('teste_page_9x16.jpg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 100vh; /* Definir altura total da página para ocupar toda a tela */
+  padding-top: 1vw;
+  background-color: #000;
+  max-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
   margin: 0; /* Remover margens para ocupar toda a largura da página */
 }
 
 /* form */
 #main-container {
   width: 395px;
+  min-width: auto;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -48,14 +54,50 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+h2 {
+  font-family: 'corporate_aregular';
+  padding-left: 35%;
+  font-size: 100%;
+  margin: -2%;
+  padding-top: 0%;
+  position: absolute;
+
+}
+
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 40%; /* Tamaanho mínimo da fonte */
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 100%; /* Tamanho mínimo da fonte */
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    margin: -3.5%; /* Tamanho mínimo da fonte */
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    padding-left: 38%; /* Tamanho mínimo da fonte */
+    padding-top: -80%;
+    margin: -4%;
+  }
+}
+
 .full-box {
   flex: 1 1 100%;
   position: relative;
 }
+
 .half-box {
   flex: 1 1 45%;
   position: relative;
 }
+
 .spacing {
   margin-right: 2.5%;
 }
@@ -71,9 +113,94 @@ input {
   color: #000; /* Definir a cor do texto */
   background-color: #FFF; /* Definir a cor de fundo */
 }
-input:focus {
-  border-color: #009BDB;
+/* Adicione o seguinte código CSS */
+#numero-sorteio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 50px;
 }
+
+#input-numero-sorteio {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mbestrela{
+  width: 5.5%;
+  max-width: 20%;
+  min-width: 4%;
+  margin-left: 20vw;
+
+}
+
+@media (max-width: 1200px) {
+  .mbestrela {
+    margin-left: 10%; /* Tamanho mínimo da fonte */
+    width: 11%;
+
+  }
+}
+h3{
+  padding-left: 1400px;;
+  font-size: 1.0rem;
+  margin: 0px;
+}
+p.empresa {
+  font-family: "corporatesdemi";
+  position: absolute;
+  font-size: 70%;
+  padding-left: 79.7%;
+  margin-top: 16%;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  p.empresa {
+    font-size: 40%; /* O tamanho da fonte será 80% do tamanho da fonte do elemento pai */
+    padding-left: 51%;
+    margin-top: 14.8%;
+  }
+}
+
+    
+  .mbestreladois{
+  position: absolute;
+  max-width: 20%;
+  width: 1.1%;
+  min-width: 0.2%;
+  margin-top: 10%;
+  margin-left: 79.6%;
+}
+@media (max-width: 1200px) {
+  .mbestreladois {
+    margin-top: 20%;
+    margin-left: 50%;
+    width: 2.7%;
+  }
+}
+p.marca {
+  font-family: "corporatesdemi";
+  position: absolute;
+  font-size: 70%;
+  padding-left: 80.8%;
+  margin-top: 17.4%;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  p.marca {
+    font-size: 40%; /* O tamanho da fonte será 40% do tamanho da fonte do elemento pai */
+    padding-left: 53%;
+    margin-top: 17.8%;
+  }
+}
+
 input[type="submit"] {
   background-color: #009BDB;
   color: #000;
@@ -82,76 +209,101 @@ input[type="submit"] {
   height: 40px;
   cursor: pointer;
 }
-#agreement {
-  margin-right: 5px;
-}
-#agreement, #agreement-label {
-  display: inline-block;
-  width: auto;
-}
-.error-validation {
-  color: #ff1a1a;
-  position: absolute;
-  top: 57px;
-  font-size: 12px;
-}
-.template {
-  display: none;
-}
-/* Adicione esta classe CSS ao seu arquivo CSS */
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
+@media (max-width: 600px) {
+  .empresa, .mbestreladois, .marca {
+    font-size: 0.8rem; /* Aumentar o tamanho da fonte para melhor legibilidade */
+    /* Adicione quaisquer outros estilos necessários aqui */
   }
 }
-.scale {
-  animation: scale 0.5s;
-}
-#span-numero-sorteio {
-  color: white;
-    font-size: 40px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
 
-}
-/* Adicione o seguinte código CSS */
-#numero-sorteio {
-  position: absolute;
-  top: 0;
-  right: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  margin-right: 20px; /* Adicione essa propriedade para ajustar a margem direita */
-  z-index: 9999; /* Adicione essa propriedade para garantir que fique acima dos outros elementos */
-    font-size: 30px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+/* Estilos para telas com largura maior que 600px (como desktops) */
+@media (min-width: 50vw) {
+  .empresa {
+    margin-top: 16vw;
+  }
 
-}
+  .mbestreladois {
+    margin-top: 17vw;
 
-#input-numero-sorteio {
-  text-align: center;
-  border: none;
-  background-color: transparent;
-  width: 100px;
-  font-size: 78px;
-  font-weight: bold;
-    font-size: 30px; /* Adicione essa propriedade para definir o tamanho da fonte para 30 pixels */
+  }
 
-}
-.sorteado {
-  display: none;
-   
+  .marca {
+    margin-top: 17.49vw;
+  }
 
-}
-#numero-sorteado {
-  font-size: 30px; /* aumentar o tamanho da fonte */
-   font-weight: bold; /* tornar o texto em negrito */
-  text-align: center; /* centralizar o texto */
-    width: 100%; /* definir a largura do elemento para ocupar toda a largura da tela */
+  #agreement {
+    margin-right: 0.5vw;
+  }
+  #agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+  }
+  .error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+  }
+  .template {
+    display: none;
+  }
 
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .scale {
+    animation: scale 0.5s;
+  }
+  #span-numero-sorteio {
+    color: white;
+    font-size: 40px;
+  }
+
+  #numero-sorteio {
+    position: absolute;
+    top: 0;
+    right: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 20px;
+    z-index: 9999;
+    font-size: 30px;
+
+  }
+
+  #input-numero-sorteio {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    width: 100px;
+    font-size: 78px;
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+  .sorteado {
+    display: none;
+    font-size: 0.5px;
+
+  }
+  #numero-sorteado {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+  }
+  footer{
+    min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
+  }
 }
