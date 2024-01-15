@@ -56,9 +56,9 @@ form {
 }
 h2 {
   font-family: 'corporate_aregular';
-  padding-left: 35%;
-  font-size: 100%;
-  top: 6.5%; /* Ajustado */
+  padding-left: 34%;
+  font-size: 125%;
+  top: 9.7%; /* Ajustado */
   padding-top: 0%;
   position: absolute;
 }
@@ -73,7 +73,7 @@ h2 {
 @media (max-width: 1200px) {
   h2 {
     font-size: 100%; /* Tamanho mínimo da fonte */
-    top: 3.5%; /* Adicionado */
+    top: 3.2%; /* Adicionado */
     height: 60%; /* Adicionado */
   }
 }
@@ -296,6 +296,6 @@ input[type="submit"] {
   }
   footer{
     min-width: 98vw; /* Definir altura mínima da página para ocupar toda a tela */
-    margin-top: -7%;
+    margin-top: -4%;
   }
 }
