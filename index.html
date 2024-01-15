@@ -5,32 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form de Registro com validações em JS</title>
-  <link rel='stylesheet' type='text/css' href='styles.css'>
-  <style>
-    /* Adicione o seguinte código CSS */
-    #numero-sorteio {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      font-size: 50px;
-    }
-
-    #input-numero-sorteio {
-      text-align: center;
-      border: none;
-      background-color: transparent;
-      width: 100px;
-      font-size: 30px;
-      font-weight: bold;
-    }
+  <title>Cadastro Sorteio MB</title>  
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <img class="mbestrela" src="MB_ESTRELA.svg" /> 
+  <h2> Mercedes-Benz</h2>
+  <style>    
+    
   </style>
 </head>
 
 <body>
+ 
   <div id="main-container">
-    <h1>Cadastre-se para concorrer</h1>
+    <h1>Cadastre-se para concorrer!</h1>
+    
     <form id="register-form" action="">
       <div class="full-box">
         <label for="email">E-mail</label>
@@ -53,8 +41,8 @@
         <input type="text" name="passconfirmation" id="phoneconfirmation" placeholder="Digite novamente seu telefone" data-equal="phone" required>
       </div>
       <div>
-        <input type="checkbox" name="agreement" id="agreement">
-        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="termosdeuso.html">termos de uso</a></label>
       </div>
       <div class="full-box">
         <input id="btn-submit" type="submit" value="Cadastrar">
@@ -66,10 +54,16 @@
           <label style="font-size:30px">Parabéns, o seu número do sorteio é: </label>
         </div>
       </div>
-    </form>
+    </form>    
   </div>
   <p class="error-validation template"></p>
   <script src='scrip.js'></script>
 </div>
+<footer>
+  <p class="empresa">Uma empresa da Daimler Truck AG</p>
+  <img class="mbestreladois" src="MB_ESTRELA.svg" />
+  <p class="marca">e Mercedes-Benz são marcas comerciais da Mercedes-Benz Group AG</p>  
+</footer>
+
 </body>
 </html>
