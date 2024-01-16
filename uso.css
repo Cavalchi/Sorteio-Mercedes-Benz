@@ -32,7 +32,7 @@ h2 {
   h2 {
     font-size: 1.1rem; /* Tamanho de fonte menor para telas pequenas */
     margin: -1.2rem; /* Ajustar a margem para evitar sobreposição */
-    padding-left: 10.5rem; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 9.5rem; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -55,7 +55,7 @@ h2 {
 @media (max-width: 600px) {
   .mbestrela {
     width: 3rem; /* Tamanho menor para telas pequenas */
-    margin-left: 4rem; /* Ajustar a margem esquerda para evitar o desbordamento de texto */
+    margin-left: 2rem; /* Ajustar a margem esquerda para evitar o desbordamento de texto */
     margin-top: 0.5rem; /* Ajustar a margem superior para evitar sobreposição */
   }
 }
@@ -73,14 +73,14 @@ a.Voltar {
   font-size: 1.1em; /* Tamanho relativo */
   font-weight: bold;
   text-decoration: underline;
-  padding-left: 20.2%;
+  padding-left: 19.5em;
   color: #fff;
 }
 
 @media (max-width: 600px) {
   a.Voltar {
     font-size: 1em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 3.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 1.7em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -123,7 +123,7 @@ p.titulodireitos {
   font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
   margin-top: 2%;
-  padding-left: 16em;
+  padding-left: 3em;
   white-space: nowrap;
 }
 
@@ -155,7 +155,7 @@ p.textodireitos {
   p.textodireitos {
     font-size: 1em; /* Tamanho de fonte maior para telas pequenas */
     margin: 10%; /* Aumentar a margem para evitar sobreposição */
-    padding-left: 5%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 0em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -206,7 +206,7 @@ p.textomarcas {
   p.textomarcas {
     font-size: 1.2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 15%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left:2.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -294,5 +294,5 @@ p.marca {
 footer {
   min-width: 100%;
   margin-top: 20%;
-  margin-left: -5%;
+  margin-left: 0em;
 }
