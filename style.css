@@ -148,9 +148,9 @@ p.empresa {
 
 @media (max-width: 1200px) {
   p.empresa {
-    font-size: 60%;
-    padding-left: 3.9em;
-    margin-top: 11em;
+    font-size: 0.4em;
+    padding-left: 31.9em;
+    margin-top: 18em;
   }
 }
 
@@ -165,7 +165,7 @@ p.empresa {
 @media (max-width: 1200px) {
   .mbestreladois {
     margin-top: 8em;
-    margin-left:2.4em;
+    margin-left:12.4em;
     width: 3.7%;
   }
 }
@@ -187,8 +187,9 @@ p.marca {
 
 @media (max-width: 1200px) {
   p.marca {
-    margin-top: 11.5em;
-    margin-left: -24.7em;
+    margin-top: 21em;
+    margin-left: -17.7em;
+    font-size: 0.4em;
     width: 3.7%;
   }
 }
