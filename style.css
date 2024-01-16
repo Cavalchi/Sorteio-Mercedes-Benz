@@ -149,7 +149,7 @@ p.empresa {
 @media (max-width: 1200px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: -24.7em;
+    padding-left: 21em;
     margin-top: 23em;
   }
 }
@@ -188,7 +188,7 @@ p.marca {
 @media (max-width: 1200px) {
   p.marca {
     margin-top: 26em  ;
-    margin-left: 21em;
+    margin-left: -20.7em;
     font-size: 0.5em;
     width: 3.7%;
   }
