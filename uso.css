@@ -12,7 +12,7 @@
 body {
   padding-top: 1vw;
   background-color: #000;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0;
 }
 
@@ -233,7 +233,7 @@ p.empresa {
   p.empresa {
     font-size: 0.5em;
     padding-left: 21.7em;
-    margin-top: 18em;
+    margin-top: -8em;
 } /* Aumentar a margem superior para evitar sobreposição */
   }
 
