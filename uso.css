@@ -12,7 +12,7 @@
 body {
   padding-top: 1vw;
   background-color: #000;
-  max-width: 100%;
+  max-width: 98%;
   margin: 0;
 }
 
@@ -74,6 +74,7 @@ a.Voltar {
   font-weight: bold;
   text-decoration: underline;
   padding-left: 19.5em;
+  
   color: #fff;
 }
 
@@ -81,6 +82,7 @@ a.Voltar {
   a.Voltar {
     font-size: 1em; /* Tamanho de fonte menor para telas pequenas */
     padding-left: 1.7em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-top: 3em;
   }
 }
 
@@ -99,7 +101,7 @@ li {
 @media (max-width: 600px) {
   .li {
    
-    margin-top: 10em; /* Aumentar a margem superior para evitar sobreposição */
+    margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
     
   }
 }
@@ -123,7 +125,7 @@ p.titulodireitos {
   font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
   margin-top: 2%;
-  padding-left: 3em;
+  padding-left: 16.5em;
   white-space: nowrap;
 }
 
@@ -289,4 +291,9 @@ p.marca {
     padding-left: 11.3em; /* Ajustar o preenchimento esquerdo */
     margin-top: -4em; /* Ajustar a margem superior */
   }
+}
+footer {
+  min-width: 100%;
+  margin-top: 20%;
+  margin-left: -5%;
 }
