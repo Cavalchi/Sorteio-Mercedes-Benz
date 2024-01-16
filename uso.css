@@ -113,7 +113,7 @@ li {
 }
 
 .divisao {
-  background: linear-gradient(to right, #cec6c6, #000);
+  background: linear-gradient(to right, #1d1d1d, #000);
   margin: 12px;
   padding: 0.01pt;
 }
@@ -230,7 +230,7 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 12em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 11.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
     margin-top: 11em  ; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
@@ -254,7 +254,7 @@ p.empresa {
 @media (max-width: 600px) {
   .mbestreladois {
     width: 1.5em; /* Tamanho menor para telas pequenas */
-    margin-left: 7.3em; /* Reduzir a margem esquerda para evitar o desbordamento de texto */
+    margin-left: 7em; /* Reduzir a margem esquerda para evitar o desbordamento de texto */
     margin-top:0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
@@ -278,7 +278,7 @@ p.marca {
 @media (max-width: 600px) {
   p.marca {
     font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 15em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 14.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
     margin-top:  -1.9em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
