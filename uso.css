@@ -73,7 +73,7 @@ a.Voltar {
   font-size: 1.1em; /* Tamanho relativo */
   font-weight: bold;
   text-decoration: underline;
-  padding-left: 19.5em;
+  padding-left: 19.9em;
 
   color: #fff;
 }
@@ -81,7 +81,7 @@ a.Voltar {
 @media (max-width: 600px) {
   a.Voltar {
     font-size: 1em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 1.7em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 2em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
     padding-top: 3em;
   }
 }
@@ -109,11 +109,7 @@ li {
   }
 }
 
-.divisao {
-  background: linear-gradient(to right, #1d1d1d, #000);
-  margin: 12px;
-  padding: 0.01pt;
-}
+
 @media (min-width: 601px) and (max-width: 1200px) {
   .divisao {
     margin-top: 50em; /* Ajustar a margem superior */
