@@ -140,7 +140,7 @@ h3 {
 p.empresa {
   font-family: "corporate_sregular";
   position: absolute;
-  font-size: 70%;
+  font-size: 0.7em;
   padding-left: 79.7%;
   margin-top: 16%;
   white-space: nowrap;
@@ -179,7 +179,7 @@ p.empresa {
 p.marca {
   font-family: "corporate_sregular";
   position: absolute;
-  font-size: 70%;
+  font-size: 0.7em;
   padding-left: 80.8%;
   margin-top: 17.4%;
   white-space: nowrap;
