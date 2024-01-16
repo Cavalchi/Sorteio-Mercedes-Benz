@@ -74,7 +74,7 @@ a.Voltar {
   font-weight: bold;
   text-decoration: underline;
   padding-left: 19.5em;
-  
+
   color: #fff;
 }
 
@@ -93,24 +93,19 @@ a.Voltar {
   }
 }
 
-
 li {
   list-style-type: none;
   margin-top: 3em;
 }
 @media (max-width: 600px) {
   .li {
-   
     margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
-    
   }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
   p.li {
-    
     margin-top: 10em; /* Ajustar a margem superior */
-    
   }
 }
 
@@ -174,7 +169,7 @@ p.marcas {
   font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
   margin-top: 2%;
-  padding-left: 16em ;
+  padding-left: 16em;
   white-space: nowrap;
 }
 
@@ -208,7 +203,7 @@ p.textomarcas {
   p.textomarcas {
     font-size: 1.2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left:1.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 1.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -234,9 +229,8 @@ p.empresa {
     font-size: 0.5em;
     padding-left: 21.7em;
     margin-top: -8em;
-} /* Aumentar a margem superior para evitar sobreposição */
-  }
-
+  } /* Aumentar a margem superior para evitar sobreposição */
+}
 
 @media (min-width: 601px) and (max-width: 1200px) {
   p.empresa {
@@ -282,7 +276,7 @@ p.marca {
   p.marca {
     font-size: 0.5em;
     padding-left: 24.5em;
-    margin-top: -1.6em;/* Aumentar a margem superior para evitar sobreposição */
+    margin-top: -1.6em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
