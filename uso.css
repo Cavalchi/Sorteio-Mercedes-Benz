@@ -96,7 +96,7 @@ a.Voltar {
 
 li {
   list-style-type: none;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 @media (max-width: 600px) {
   .li {
@@ -295,6 +295,6 @@ p.marca {
 }
 footer {
   min-width: 100%;
-  margin-top: 20%;
+  margin-top: 24%;
   margin-left: -5%;
 }
