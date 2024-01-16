@@ -149,7 +149,7 @@ p.empresa {
 @media (max-width: 1200px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: 14em;
+    padding-left: 15em;
     margin-top: 14.5em;
   }
 }
