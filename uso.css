@@ -114,6 +114,16 @@ li {
   margin: 12px;
   padding: 0.01pt;
 }
+@media (min-width: 601px) and (max-width: 1200px) {
+  .divisao {
+    margin-top: 50em; /* Ajustar a margem superior */
+  }
+}
+@media (max-width: 600px) {
+  .divisao {
+    padding-top: -2em; /* Ajustar a margem superior */
+  }
+}
 
 p.titulodireitos {
   color: #fff;
@@ -227,7 +237,7 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: 21.7em;
+    padding-left: 18.8em;
     margin-top: -8em;
   } /* Aumentar a margem superior para evitar sobreposição */
 }
@@ -251,7 +261,7 @@ p.empresa {
 @media (max-width: 600px) {
   .mbestreladois {
     width: 1.2em;
-    margin-left: 10.9em;
+    margin-left: 9.4em;
     margin-top: 0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
@@ -275,7 +285,7 @@ p.marca {
 @media (max-width: 600px) {
   p.marca {
     font-size: 0.5em;
-    padding-left: 24.5em;
+    padding-left: 21.5em;
     margin-top: -1.6em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
