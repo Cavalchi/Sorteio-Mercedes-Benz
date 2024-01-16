@@ -131,7 +131,7 @@ p.titulodireitos {
   p.titulodireitos {
     font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 3%; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 3.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 3em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -155,7 +155,7 @@ p.textodireitos {
   p.textodireitos {
     font-size: 1em; /* Tamanho de fonte maior para telas pequenas */
     margin: 10%; /* Aumentar a margem para evitar sobreposição */
-    padding-left: 0em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    margin-left: -1em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -180,7 +180,7 @@ p.marcas {
   p.marcas {
     font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 10%; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 2.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 2.3em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -206,7 +206,7 @@ p.textomarcas {
   p.textomarcas {
     font-size: 1.2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left:2.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left:1.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -229,9 +229,9 @@ p.empresa {
 
 @media (max-width: 600px) {
   p.empresa {
-    font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 11.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
-    margin-top: 11em  ; /* Aumentar a margem superior para evitar sobreposição */
+    font-size: 0.5em;
+    padding-left: 15.5em;
+    margin-top: 3em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
@@ -253,9 +253,9 @@ p.empresa {
 
 @media (max-width: 600px) {
   .mbestreladois {
-    width: 1.5em; /* Tamanho menor para telas pequenas */
-    margin-left: 7em; /* Reduzir a margem esquerda para evitar o desbordamento de texto */
-    margin-top:0.2em; /* Aumentar a margem superior para evitar sobreposição */
+    width: 1.5em;
+    margin-left: 7.6em;
+    margin-top: 0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
@@ -277,9 +277,9 @@ p.marca {
 
 @media (max-width: 600px) {
   p.marca {
-    font-size: 0.6em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 14.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
-    margin-top:  -1.9em; /* Aumentar a margem superior para evitar sobreposição */
+    font-size: 0.5em;
+    padding-left: 18.5em;
+    margin-top: -1.9em;/* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
@@ -289,10 +289,4 @@ p.marca {
     padding-left: 11.3em; /* Ajustar o preenchimento esquerdo */
     margin-top: -4em; /* Ajustar a margem superior */
   }
-}
-
-footer {
-  min-width: 100%;
-  margin-top: 20%;
-  margin-left: 0em;
 }
