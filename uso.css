@@ -12,7 +12,7 @@
 body {
   padding-top: 1vw;
   background-color: #000;
-  max-width: 98%;
+  max-width: 90%;
   margin: 0;
 }
 
@@ -96,7 +96,7 @@ a.Voltar {
 
 li {
   list-style-type: none;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 @media (max-width: 600px) {
   .li {
@@ -232,10 +232,11 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: 15.5em;
-    margin-top: 3em; /* Aumentar a margem superior para evitar sobreposição */
+    padding-left: 21.7em;
+    margin-top: 18em;
+} /* Aumentar a margem superior para evitar sobreposição */
   }
-}
+
 
 @media (min-width: 601px) and (max-width: 1200px) {
   p.empresa {
@@ -255,8 +256,8 @@ p.empresa {
 
 @media (max-width: 600px) {
   .mbestreladois {
-    width: 1.5em;
-    margin-left: 7.6em;
+    width: 1.2em;
+    margin-left: 10.9em;
     margin-top: 0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
@@ -280,8 +281,8 @@ p.marca {
 @media (max-width: 600px) {
   p.marca {
     font-size: 0.5em;
-    padding-left: 18.5em;
-    margin-top: -1.9em;/* Aumentar a margem superior para evitar sobreposição */
+    padding-left: 24.5em;
+    margin-top: -1.6em;/* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
