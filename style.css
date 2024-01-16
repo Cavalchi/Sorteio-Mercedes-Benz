@@ -140,7 +140,7 @@ h3 {
 p.empresa {
   font-family: "corporate_sregular";
   position: absolute;
-  font-size: 0.7em;
+  font-size: 0.5em;
   padding-left: 79.7%;
   margin-top: 16%;
   white-space: nowrap;
@@ -148,9 +148,9 @@ p.empresa {
 
 @media (max-width: 1200px) {
   p.empresa {
-    font-size: 0.4em;
-    padding-left: 31.9em;
-    margin-top: 18em;
+    font-size: 0.5em;
+    padding-left: 20.9em;
+    margin-top: 23em;
   }
 }
 
@@ -164,8 +164,8 @@ p.empresa {
 }
 @media (max-width: 1200px) {
   .mbestreladois {
-    margin-top: 8em;
-    margin-left:12.4em;
+    margin-top: 12.2em;
+    margin-left:10.4em;
     width: 3.7%;
   }
 }
@@ -179,7 +179,7 @@ p.empresa {
 p.marca {
   font-family: "corporate_sregular";
   position: absolute;
-  font-size: 0.7em;
+  font-size: 0.5em;
   padding-left: 80.8%;
   margin-top: 17.4%;
   white-space: nowrap;
@@ -187,9 +187,9 @@ p.marca {
 
 @media (max-width: 1200px) {
   p.marca {
-    margin-top: 21em;
-    margin-left: -17.7em;
-    font-size: 0.4em;
+    margin-top: 25em;
+    margin-left: -18.7em;
+    font-size: 0.5em;
     width: 3.7%;
   }
 }
