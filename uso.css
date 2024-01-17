@@ -183,7 +183,7 @@ p.marcas {
   p.marcas {
     font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 10%; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 25%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 23%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
