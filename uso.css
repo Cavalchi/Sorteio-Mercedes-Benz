@@ -25,14 +25,14 @@ h2 {
   font-size: 1.3rem; /* Tamanho relativo */
   margin: -1.6rem;
   color: #fff;
-  padding-left: 32rem;
+  padding-left: 38%;
 }
 
 @media (max-width: 600px) {
   h2 {
     font-size: 1.1rem; /* Tamanho de fonte menor para telas pequenas */
     margin: -1.2rem; /* Ajustar a margem para evitar sobreposição */
-    padding-left: 9.5rem; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 53%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -40,7 +40,7 @@ h2 {
   h2 {
     font-size: 1.2rem; /* Tamanho de fonte intermediário para telas médias */
     margin: -1.4rem; /* Ajustar a margem */
-    padding-left: 22rem; /* Ajustar o preenchimento esquerdo */
+    padding-left: 43%; /* Ajustar o preenchimento esquerdo */
   }
 }
 
@@ -48,14 +48,14 @@ h2 {
   width: 5rem;
   max-width: 20rem;
   min-width: 0.1rem;
-  margin-left: 21em;
+  margin-left: 22%;
   margin-top: 1rem;
 }
 
 @media (max-width: 600px) {
   .mbestrela {
     width: 3rem; /* Tamanho menor para telas pequenas */
-    margin-left: 2rem; /* Ajustar a margem esquerda para evitar o desbordamento de texto */
+    margin-left: 22%; /* Ajustar a margem esquerda para evitar o desbordamento de texto */
     margin-top: 0.5rem; /* Ajustar a margem superior para evitar sobreposição */
   }
 }
@@ -63,7 +63,7 @@ h2 {
 @media (min-width: 601px) and (max-width: 1200px) {
   .mbestrela {
     width: 4rem; /* Tamanho intermediário para telas médias */
-    margin-left: 11rem; /* Ajustar a margem esquerda */
+    margin-left: 22%; /* Ajustar a margem esquerda */
     margin-top: 0.8rem; /* Ajustar a margem superior */
   }
 }
@@ -73,7 +73,7 @@ a.Voltar {
   font-size: 1.1em; /* Tamanho relativo */
   font-weight: bold;
   text-decoration: underline;
-  padding-left: 19.9em;
+  padding-left: 23%;
 
   color: #fff;
 }
@@ -81,7 +81,7 @@ a.Voltar {
 @media (max-width: 600px) {
   a.Voltar {
     font-size: 1em; /* Tamanho de fonte menor para telas pequenas */
-    padding-left: 2em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 23%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
     padding-top: 3em;
   }
 }
@@ -89,7 +89,7 @@ a.Voltar {
 @media (min-width: 601px) and (max-width: 1200px) {
   a.Voltar {
     font-size: 1.05em; /* Tamanho de fonte intermediário para telas médias */
-    padding-left: 10.5em; /* Ajustar o preenchimento esquerdo */
+    padding-left: 23%; /* Ajustar o preenchimento esquerdo */
   }
 }
 
@@ -112,7 +112,7 @@ li {
 
 @media (min-width: 601px) and (max-width: 1200px) {
   .divisao {
-    margin-top: 50em; /* Ajustar a margem superior */
+    margin-top: 3em; /* Ajustar a margem superior */
   }
 }
 @media (max-width: 600px) {
@@ -126,7 +126,7 @@ p.titulodireitos {
   font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
   margin-top: 2%;
-  padding-left: 16.5em;
+  padding-left: 44%;
   white-space: nowrap;
 }
 
@@ -134,7 +134,7 @@ p.titulodireitos {
   p.titulodireitos {
     font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 3%; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 3em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 25%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -142,7 +142,7 @@ p.titulodireitos {
   p.titulodireitos {
     font-size: 2.2em; /* Tamanho de fonte intermediário para telas médias */
     margin-top: 0%; /* Ajustar a margem superior */
-    padding-left: 10em; /* Ajustar o preenchimento esquerdo */
+    padding-left: 43%; /* Ajustar o preenchimento esquerdo */
   }
 }
 p.textodireitos {
@@ -158,15 +158,15 @@ p.textodireitos {
   p.textodireitos {
     font-size: 1em; /* Tamanho de fonte maior para telas pequenas */
     margin: 10%; /* Aumentar a margem para evitar sobreposição */
-    margin-left: -1em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    margin-left: 5%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
   p.textodireitos {
-    font-size: 1.3em; /* Tamanho de fonte intermediário para telas médias */
-    margin: 9%; /* Ajustar a margem */
-    padding-left: 8%; /* Ajustar o preenchimento esquerdo */
+  font-size: 1.3em;
+    margin: 7%;
+    padding-left: 15%;
   }
 }
 
@@ -175,7 +175,7 @@ p.marcas {
   font-size: 2.5em; /* Tamanho relativo */
   font-family: "corporate_aregular";
   margin-top: 2%;
-  padding-left: 16em;
+  padding-left: 44%;
   white-space: nowrap;
 }
 
@@ -183,7 +183,7 @@ p.marcas {
   p.marcas {
     font-size: 2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 10%; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 2.3em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 25%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -191,7 +191,7 @@ p.marcas {
   p.marcas {
     font-size: 2.2em; /* Tamanho de fonte intermediário para telas médias */
     margin-top: 10%; /* Ajustar a margem superior */
-    padding-left: 10em; /* Ajustar o preenchimento esquerdo */
+    padding-left: 43%; /* Ajustar o preenchimento esquerdo */
   }
 }
 
@@ -201,7 +201,7 @@ p.textomarcas {
   font-family: "corporate_aregular";
   margin-top: 2em;
   text-align: left;
-  padding-left: 9%;
+  padding-left: 10%;
   width: 100%;
 }
 
@@ -209,7 +209,7 @@ p.textomarcas {
   p.textomarcas {
     font-size: 1.2em; /* Tamanho de fonte menor para telas pequenas */
     margin-top: 2em; /* Aumentar a margem superior para evitar sobreposição */
-    padding-left: 1.5em; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
+    padding-left: 15%; /* Reduzir o preenchimento esquerdo para evitar o desbordamento de texto */
   }
 }
 
@@ -217,7 +217,7 @@ p.textomarcas {
   p.textomarcas {
     font-size: 1.41em; /* Tamanho de fonte intermediário para telas médias */
     margin-top: 1em; /* Ajustar a margem superior */
-    padding-left: 17%; /* Ajustar o preenchimento esquerdo */
+    padding-left: 22%; /* Ajustar o preenchimento esquerdo */
     width: 100%;
   }
 }
@@ -233,16 +233,16 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: 18.8em;
+    padding-left: 45.8%;
     margin-top: -8em;
   } /* Aumentar a margem superior para evitar sobreposição */
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
   p.empresa {
-    font-size: 0.65em; /* Tamanho de fonte intermediário para telas médias */
-    padding-left: 60%; /* Ajustar o preenchimento esquerdo */
-    margin-top: 17%; /* Ajustar a margem superior */
+    font-size: 0.65em;
+    padding-left: 72.5%;
+    margin-top: -9.5em;
   }
 }
 
@@ -257,16 +257,16 @@ p.empresa {
 @media (max-width: 600px) {
   .mbestreladois {
     width: 1.2em;
-    margin-left: 9.4em;
+    margin-left: 45.4%;
     margin-top: 0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width:1280px) {
   .mbestreladois {
-    width: 1%; /* Tamanho intermediário para telas médias */
-    margin-left: 60%; /* Ajustar a margem esquerda */
-    margin-top: 17.5%; /* Ajustar a margem superior */
+    width: 1.1em;
+    margin-left: 72.4%;
+    margin-top: 0.3em;
   }
 }
 
@@ -281,16 +281,16 @@ p.marca {
 @media (max-width: 600px) {
   p.marca {
     font-size: 0.5em;
-    padding-left: 21.5em;
+    padding-left: 50.5%;
     margin-top: -1.6em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
 
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 601px) and (max-width:1280px) {
   p.marca {
-    font-size: 0.4em; /* Tamanho de fonte intermediário para telas médias */
-    padding-left: 11.3em; /* Ajustar o preenchimento esquerdo */
-    margin-top: -4em; /* Ajustar a margem superior */
+    font-size: 0.65em;
+    padding-left: 74.7%;
+    margin-top: -1.4em;
   }
 }
 footer {
