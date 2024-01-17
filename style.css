@@ -156,7 +156,7 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     margin-top: 23em;
-    margin-left: -306%;
+    margin-left: -45%;
     width: 3.7em;
   }
 }
