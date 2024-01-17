@@ -233,7 +233,7 @@ p.empresa {
 @media (max-width: 600px) {
   p.empresa {
     font-size: 0.5em;
-    padding-left: 45.8%;
+    padding-left: 34.8%;
     margin-top: -8em;
   } /* Aumentar a margem superior para evitar sobreposição */
 }
@@ -257,7 +257,7 @@ p.empresa {
 @media (max-width: 600px) {
   .mbestreladois {
     width: 1.2em;
-    margin-left: 45.4%;
+    margin-left: 34.4%;
     margin-top: 0.2em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
@@ -281,7 +281,7 @@ p.marca {
 @media (max-width: 600px) {
   p.marca {
     font-size: 0.5em;
-    padding-left: 50.5%;
+    padding-left: 40.5%;
     margin-top: -1.6em; /* Aumentar a margem superior para evitar sobreposição */
   }
 }
